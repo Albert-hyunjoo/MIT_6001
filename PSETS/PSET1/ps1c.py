@@ -54,3 +54,5 @@ if saving_rate != 1.0:
     print("With current savings: ", current_saving)
 else:
     None
+
+print("this message is a confirmation message for commit and push")

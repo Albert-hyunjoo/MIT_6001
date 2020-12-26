@@ -89,8 +89,7 @@ class EncryptedSubMessage(SubMessage):
                 if num_real_words > maximum_real_words:
                     decrypted_message = decoded_message
                     maximum_real_words = num_real_words
-                    what_dict = permutations
-        return (what_dict, decrypted_message)
+        return decrypted_message
 
 if __name__ == '__main__':
 
@@ -103,5 +102,3 @@ if __name__ == '__main__':
     print("Actual encryption:", message.apply_transpose(enc_dict))
     enc_message = EncryptedSubMessage(message.apply_transpose(enc_dict))
     print("Decrypted message:", enc_message.decrypt_message())
-
-    #TODO: WRITE YOUR TEST CASES HERE
